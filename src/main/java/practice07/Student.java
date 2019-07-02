@@ -8,11 +8,11 @@ public class Student extends Person {
         this.klass = klass;
     }
 
-    public long getKlass(){
+    public Klass getKlass(){
         return this.klass;
     }
 
     public string introduce(){
-        return super.introduce() + "I am a Student. I am at " + klass.getDisplayName(();
+        return super.introduce() + "I am a Student. I am at " + this.klass.getDisplayName(()+ ".";
     }
 }

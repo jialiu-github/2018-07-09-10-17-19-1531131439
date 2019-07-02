@@ -13,6 +13,6 @@ public class Student extends Person {
     }
 
     public string introduce(){
-        return "I am a Student. I am at Class " + this.klass;
+        return "I am a Student. I am at Class " + this.klass + ".";
     }
 }

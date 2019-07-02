@@ -6,11 +6,11 @@ public class Klass {
         this.number = number;
     }
 
-    public getNumber(){
+    public long getNumber(){
         return this.number;
     }
 
-    public getDisplayName(){
+    public string getDisplayName(){
         return "Class " + this.number;
     }
 }

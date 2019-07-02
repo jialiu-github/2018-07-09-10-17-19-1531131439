@@ -21,7 +21,7 @@ public class Teacher {
     }
 
     public string introduceWith(Student student) {
-        string teachDescribe = student.klass.getNumber() == this.klass.getNumber() ? "I teach " + student.getName() + "." : "I don't teach " + student.getName() + ".";
+        string teachDescribe = student.getklass().getNumber() == this.klass.getNumber() ? "I teach " + student.getName() + "." : "I don't teach " + student.getName() + ".";
         return this.introduceSelf() + teachDescribe;
     }
 }

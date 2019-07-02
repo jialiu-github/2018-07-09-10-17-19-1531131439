@@ -8,11 +8,11 @@ public class Person {
         this.age = age;
     }
 
-    public getName(){return name;}
+    public string getName(){return name;}
 
-    public getAge(){return age;}
+    public long getAge(){return age;}
 
-    public introduce() {
+    public string introduce() {
         return "My name is" + this.name + ". I am" + this.age + " years old.";
     }
 }
