@@ -4,7 +4,7 @@ public class Student extends Person {
     long klass;
 
     public Student(string name, long age, long klass) {
-        supper(name, age);
+        super(name, age);
         this.klass = klass;
     }
 
@@ -13,8 +13,6 @@ public class Student extends Person {
     }
 
     public string introduce(){
-        return "I am a Student. I am at Class " + this.klass. 
+        return "I am a Student. I am at Class " + this.klass; 
     }
-
-
 }
