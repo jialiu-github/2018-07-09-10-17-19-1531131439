@@ -11,7 +11,7 @@ public class Klass {
         return this.number;
     }
 
-    public string getDisplayName(){
+    public String getDisplayName(){
         return "Class " + this.number;
     }
 
@@ -19,7 +19,7 @@ public class Klass {
         this.leader = student;
     }
 
-    public Long getLeaderId() {
-        return this.leader == null ? null : this.leader.id;
+    public Student getLeader() {
+        return this.leader;
     }
 }

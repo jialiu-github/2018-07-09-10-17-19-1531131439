@@ -1,27 +1,31 @@
 package practice07;
 
-public class Teacher {
+public class Teacher extends Person {
     Klass klass;
-    public Teacher(string name, long age, Klass klass) {
+    public Teacher(String name, long age, Klass klass) {
         super(name, age);
         this.klass = klass;
     }
 
-    public Long getKlass(){
+    public Teacher(String name, long age) {
+        super(name, age);
+    }
+
+    public Klass getKlass(){
         return this.klass;
     }
 
-    public string introduce(){
-        string describe = this.klass == null ? "No Class" : this.klass.getDisplayName();
-        return this.introduceSelf() + describe + ".";
+    public String introduce(){
+        String describe = this.klass == null ? "No Class" : this.klass.getDisplayName();
+        return this.introduceSelf() + "I teach " + describe + ".";
     }
 
-    string introduceSelf(){
-        return super.introduce() + "I am a Teacher. ";
+    String introduceSelf(){
+        return super.introduce() + " I am a Teacher. ";
     }
 
-    public string introduceWith(Student student) {
-        string teachDescribe = student.getklass().getNumber() == this.klass.getNumber() ? "I teach " + student.getName() + "." : "I don't teach " + student.getName() + ".";
+    public String introduceWith(Student student) {
+        String teachDescribe = student.getKlass().getNumber() == this.klass.getNumber() ? "I teach " + student.getName() + "." : "I don't teach " + student.getName() + ".";
         return this.introduceSelf() + teachDescribe;
     }
 }

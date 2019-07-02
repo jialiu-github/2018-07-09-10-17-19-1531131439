@@ -1,11 +1,12 @@
 package practice03;
 
 public class Worker extends Person {
-    public Person(string name, long age) {
+
+    public Worker(String name, long age) {
         super(name, age);
     }
 
-    public string introduce(){
+    public String introduce(){
         return "I am a Worker. I have a job.";
     }
 }

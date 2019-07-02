@@ -1,18 +1,18 @@
 package practice06;
 
 public class Student extends Person {
-    long klass;
+    int klass;
 
-    public Student(string name, long age, long klass) {
+    public Student(String name, int age, int klass) {
         super(name, age);
         this.klass = klass;
     }
 
-    public long getKlass(){
+    public int getKlass(){
         return this.klass;
     }
 
-    public string introduce(){
-        return super.introduce() + "I am a Student. I am at Class " + this.klass + ".";
+    public String introduce(){
+        return super.introduce() + " I am a Student. I am at Class " + this.klass + ".";
     }
 }

@@ -10,7 +10,8 @@ public class Klass {
         return this.number;
     }
 
-    public string getDisplayName(){
+    public String getDisplayName(){
         return "Class " + this.number;
     }
+
 }

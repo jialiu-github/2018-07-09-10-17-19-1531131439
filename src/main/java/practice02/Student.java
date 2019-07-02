@@ -3,7 +3,7 @@ package practice02;
 public class Student extends Person {
     long klass;
 
-    public Student(string name, long age, long klass) {
+    public Student(String name, long age, long klass) {
         super(name, age);
         this.klass = klass;
     }
@@ -12,7 +12,7 @@ public class Student extends Person {
         return this.klass;
     }
 
-    public string introduce(){
+    public String introduce(){
         return "I am a Student. I am at Class " + this.klass + "."; 
     }
 }
